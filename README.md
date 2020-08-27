@@ -13,8 +13,7 @@ _CI. Nwoye, D. Mutter, J. Marescaux, N. Padoy_
 This repository contains the inference demo and evaluation scripts.
 
 
-[![Read on ArXiv](https://img.shields.io/badge/arxiv-1812.01366-red)](https://arxiv.org/abs/1812.01366) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Tp09LeOUOvOgmyzT01Y7zvXAMXcsX1Uc?authuser=2)
-(https://colab.research.google.com/github/CAMMA-public/ConvLSTM-Surgical-Tool-Tracker/blob/master/evaluation.ipynb)
+[![Read on ArXiv](https://img.shields.io/badge/arxiv-1812.01366-red)](https://arxiv.org/abs/1812.01366) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/CAMMA-public/ConvLSTM-Surgical-Tool-Tracker/blob/master/evaluation.ipynb)
 
 
 

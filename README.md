@@ -30,6 +30,8 @@ The model achieved a state-of-the-art performance on tool detection, localizatio
   <br /><i>Fig. 1: Architecture of the model (R+C+CL variant)</i>
 </div>
 
+
+
 # Model
 There are several variants of the tracker as contained in the paper, but this gitlab repo provides the code for only the R+CL+C variant which can easily be modified to the other variants. (See the published paper)
 
@@ -37,12 +39,12 @@ There are several variants of the tracker as contained in the paper, but this gi
 - _model.py_: the model implementation (with all the necessary libs)
 - _evaluation.ipynb_: the evaluation and demo script (jupyter notebook)
 
-
 The model depends on three utility files: _resnet_, _resnet_utils_ and _convlstm_cell_. 
 The _convlstm_cell_ is a modified version of the original ConvLSTM library due to bugs in the contrib release. (TensorFlow may likely correct this in future release)
 The one-shot state initialization and subsequent between batch state propagation is implemented in the _model.py_ code. 
 So, frame seek information (frame index number) is necessary to enforce this continuity in the video data.
 
+The model is trained on the largest public endoscopic video dataset to date: [Cholec80 dataset](http://camma.u-strasbg.fr/datasets).
 To reproduce this model on a custom dataset, users can write their training script. 
 All the necessary hyperparameters are contained in the published paper and can be tuned to suit your task and dataset.
 Model can be trained on sequential frames or video data (with frame-wise binary presence labels)
@@ -50,40 +52,27 @@ Model can be trained on sequential frames or video data (with frame-wise binary 
 No data preprocessing is required. 
 
 
+
 # Download
-If you clone this repo, running the evaluation script will automatically download the model weights (in _ckpt_ directory) and a sample test video (in _data_ directory).
+If you clone this repo, running the evaluation script will automatically download the model weights (in _ckpt_ directory) and a sample _shortened_ test video (in _data_ directory) for model testing. If you redirect these downloads to a different location, change also their paths in the jupyter notebook's _Variables & Device setup_ section.
+Feel free to try on other laparoscopic videos.
+
 
 
 # Dependency
 The model depends on the following libraries:
-1. Tensorflow >= 1.4
+1. Tensorflow (1.3 > tf < 2.0)
 2. ffmpeg
 3. Opencv
 4. imageio
 5. imageio-ffmpeg
 5. matplotlib
-6. Python >= 2.7.
+6. Python >= 2.7
 
-
-# Data
-The model is trained on the largest public endoscopic video dataset to date: [Cholec80 dataset](http://camma.u-strasbg.fr/datasets).
-A sample _shortened_ video from the test set is provided in the _data_ folder for model testing (Download step above is a prerequisite). 
-If you download to a different location, change the path in the notebook.
-Feel free to try on other laparoscopic videos.
-
-# Checkpoint
-The checkpoint files should be in the _ckpt_ folder. (Download step above is a prerequisite). 
-If you download to a different location, change the path in the notebook.
-
-
-# Metrics
-1. **Tool presence detection**  : Mean average precision (mAP) calculated as area under the precision-recall curve.
-2. **Tool spatial localization**: Accuracy @ IoU >= 0.5
-3. **Tool motion tracking**     : Multiple object tracking accuracy (MOTA), & Multiple object tracking precision (MOTP)
 
 
 # Result
-The test results are contained in the published paper. Qualitative results can be found on the CAMMA ICube YouTube: [video 1](https://youtu.be/vnMwlS5tvHE)  and [video 2](https://youtu.be/SNhd1yzOe50)
+The test results are contained in the published paper. Qualitative results can be found on the CAMMA ICube YouTube channel: [video 1](https://youtu.be/vnMwlS5tvHE)  and [video 2](https://youtu.be/SNhd1yzOe50)
 
 <p align="justify" >
     
@@ -92,6 +81,7 @@ The test results are contained in the published paper. Qualitative results can b
     <a href="https://www.youtube.com/watch?v=vnMwlS5tvHE"><img src="lib/demo-segment.gif" width="212" alt="ConvLSTM Tracker" title="Video: Weak Segmentation" style="vertical-align: middle"></a>
     <a href="https://www.youtube.com/watch?v=SNhd1yzOe50"><img src="lib/demo-tracker.gif" width="400" alt="ConvLSTM Tracker" title="Video: Tool Tracking" style="vertical-align: middle"></a>  
 </div>
+
 
 
 # Citation
@@ -118,6 +108,7 @@ If you use a whole or part of the code, data, model weights or any idea containe
         }
     </code>
 </pre>
+
 
 
 # License

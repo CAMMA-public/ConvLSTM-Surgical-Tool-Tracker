@@ -26,7 +26,7 @@ Remarkably, the model learn the spatio-temporal information in time-space domain
 The model achieved a state-of-the-art performance on tool detection, localization and tracking for weakly supervised models.
 
 <div align="center">
-  <img src="https://icube-forge.unistra.fr/CAMMA/code/endotool-analysis/tooltracking/-/raw/master/model/lib/R+CL+C_s.png" width="750" alt="ConvLSTM Tracker" title="Architecture of the model (R+CL+C variant)">
+  <img src="lib/R+CL+C_s.png" width="750" alt="ConvLSTM Tracker" title="Architecture of the model (R+CL+C variant)">
   <br /><i>Fig. 1: Architecture of the model (R+C+CL variant)</i>
 </div>
 

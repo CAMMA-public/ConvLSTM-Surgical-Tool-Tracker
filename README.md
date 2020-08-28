@@ -38,8 +38,7 @@ There are several variants of the tracker as contained in the paper, but this gi
 <b>Code list:</b>
 - _model.py_: the model implementation (with all the necessary libs)
 - _evaluation.ipynb_: the evaluation and demo script (jupyter notebook)
-
-The model depends on three utility files: _resnet_, _resnet_utils_ and _convlstm_cell_. 
+- _lib_: The model depends on three utility files: _resnet_, _resnet_utils_ and _convlstm_cell_. 
 The _convlstm_cell_ is a modified version of the original ConvLSTM library due to bugs in the contrib release. (TensorFlow may likely correct this in future release)
 The one-shot state initialization and subsequent between batch state propagation is implemented in the _model.py_ code. 
 So, frame seek information (frame index number) is necessary to enforce this continuity in the video data.
@@ -85,7 +84,6 @@ The test results are contained in the published paper. Qualitative results can b
 
 
 # Citation
-
 If you use a whole or part of the code, data, model weights or any idea contained herein in your research, please cite this paper:
 
 <p style="margin-left:.5in;text-indent:.-5in;">
@@ -93,9 +91,8 @@ If you use a whole or part of the code, data, model weights or any idea containe
         International journal of computer assisted radiology and surgery, 14(6), pp.1059-1067.</i>
 </p>
 
-<b>Bibtex:</b>
-<pre>
-    <code>
+#### Bibtex:
+```bibtex
 	@article{nwoye2019weakly,
         title={Weakly supervised convolutional LSTM approach for tool tracking in laparoscopic videos},
         author={Nwoye, Chinedu Innocent and Mutter, Didier and Marescaux, Jacques and Padoy, Nicolas},
@@ -106,14 +103,12 @@ If you use a whole or part of the code, data, model weights or any idea containe
         year={2019},
         publisher={Springer}
         }
-    </code>
-</pre>
-
+```
 
 
 # License
 
-This code, models, and datasets are available for **non-commercial scientific research purposes** provided by [CC BY-NC-SA 4.0 LICENSE](https://creativecommons.org/licenses/by-nc-sa/4.0/) attached as [LICENSE file](LICENSE). <br />
+This code, models, and datasets are available for **non-commercial scientific research purposes** provided by [CC BY-NC-SA 4.0 LICENSE](https://creativecommons.org/licenses/by-nc-sa/4.0/) attached as [LICENSE file](LICENSE). 
 By downloading and using this code you agree to the terms in the [LICENSE](LICENSE). Third-party codes are subject to their respective licenses.
 
 

@@ -69,6 +69,10 @@ The model depends on the following libraries:
 6. Python >= 2.7
 
 
+# System Requirements:
+The code has been test on Linux operating system. It runs on both CPU and GPU.
+Equivalence of basic OS commands such as unzip, cd, wget, etc. will be needed to run in other OS such as Window, Mac, etc.
+
 
 # Result
 The test results are contained in the published paper. Qualitative results can be found on the CAMMA ICube YouTube channel: [video 1](https://youtu.be/vnMwlS5tvHE)  and [video 2](https://youtu.be/SNhd1yzOe50)

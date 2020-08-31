@@ -70,7 +70,7 @@ The model depends on the following libraries:
 
 
 # System Requirements:
-The code has been test on Linux operating system. It runs on both CPU and GPU.
+The code has been tested on Linux operating system. It runs on both CPU and GPU.
 Equivalence of basic OS commands such as unzip, cd, wget, etc. will be needed to run in other OS such as Window, Mac, etc.
 
 

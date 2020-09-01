@@ -78,12 +78,8 @@ Equivalence of basic OS commands such as _unzip, cd, wget_, etc. will be needed 
 The test results are contained in the published paper. Qualitative results can be found on the CAMMA ICube YouTube channel: [video 1](https://youtu.be/vnMwlS5tvHE)  and [video 2](https://youtu.be/SNhd1yzOe50)
 
 <p align="justify" >
-    
-<div align="justify" style=" border-left: 5px; border-right: 5px; margin-bottom: 10px;">  
-    <a href="https://www.youtube.com/watch?v=vnMwlS5tvHE"><img src="lib/demo-localize.gif" width="212" alt="ConvLSTM Tracker" title="Video:  Tool Localization" style="vertical-align: middle"></a>
-    <a href="https://www.youtube.com/watch?v=vnMwlS5tvHE"><img src="lib/demo-segment.gif" width="212" alt="ConvLSTM Tracker" title="Video: Weak Segmentation" style="vertical-align: middle"></a>
-    <a href="https://www.youtube.com/watch?v=SNhd1yzOe50"><img src="lib/demo-tracker.gif" width="400" alt="ConvLSTM Tracker" title="Video: Tool Tracking" style="vertical-align: middle"></a>  
-</div>
+    <a href="https://www.youtube.com/watch?v=vnMwlS5tvHE"><img src="lib/demo.gif" width="90.3%" alt="ConvLSTM Tracker" title="Video:  Tool Localization" style="vertical-align: middle"></a>
+</p>
 
 
 

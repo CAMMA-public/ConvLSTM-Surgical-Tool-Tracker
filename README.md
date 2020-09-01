@@ -71,7 +71,7 @@ The model depends on the following libraries:
 
 # System Requirements:
 The code has been test on Linux operating system. It runs on both CPU and GPU.
-Equivalence of basic OS commands such as unzip, cd, wget, etc. will be needed to run in other OS such as Window, Mac, etc.
+Equivalence of basic OS commands such as _unzip, cd, wget_, etc. will be needed to run in Windows or Mac OS.
 
 
 # Result
@@ -116,5 +116,5 @@ This code, models, and datasets are available for **non-commercial scientific re
 By downloading and using this code you agree to the terms in the [LICENSE](LICENSE). Third-party codes are subject to their respective licenses.
 
 
-
+<hr/>
 <b>This repo is maintained by CAMMA. Comments are welcomed. Check for updates.</b>

@@ -60,7 +60,7 @@ Feel free to try on other laparoscopic videos.
 
 # Dependency
 The model depends on the following libraries:
-1. Tensorflow (1.3 > tf < 2.0)
+1. Tensorflow (1.3 < tf < 2.0)
 2. ffmpeg
 3. Opencv
 4. imageio
